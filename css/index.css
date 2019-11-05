@@ -1,3 +1,283 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ///////////////////////////////////////////// */
+
+* {
+    box-sizing:border-box;
+	padding:0;
+	margin: 0;
+ 	max-width: 100%;
+	/* border: 1px solid grey !important; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+/* NIC CODING START HERE */
+
+.nav {
+    width: 100%;
+    display: flex;
+    background-color: dodgerblue;
+}
+
+.navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+
+}
+
+.menu {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    margin: 1%;
+    align-content: center;
+    font-size: 1rem;
+    text-decoration: none;
+    order: 2;
+}
+.logo {
+    display: flex;
+}
+.logo img {
+    width: 100%;
+    order: 3;
+}
 
 
+/* NAV ABOVE  */
+/* header below  */
+
+.container {
+	margin: 2%;
+}
+
+.slider {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main {
+    width: 50%;
+    display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.main h1 {
+	font-size: 4rem;
+	text-align: center;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.main, img {
+    width: 40%;
+    align-content: center;
+    padding: 5%;
+}
+
+button {
+    font-size: 2rem;
+}
+
+/* SLIDER ABOVE */
+/* SECTIONS BELOW */
+
+.top {
+	display: flex;
+    justify-content: space-around;
+    padding: 3% 0;
+    border-top: 1px solid black;
+    font-size: 1rem;
+}
+
+.top div {
+	margin:0 1%;
+}
+
+.middle-img {
+    padding: 0;
+    width: 100%;
+}
+
+.bottom {
+    display: flex;
+    padding: 3% 0;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.contact {
+    margin: 2% 0;
+    font-size: 1rem;
+
+}
+
+/* MEDIA QUIERIES */
+
+@media (max-width: 500px) {
+        
+   
+
+    .container {
+        margin: 0%;
+    }
+
+    .nav {
+        position: fixed;
+        width: 100% !important;
+    }
+
+    .navbar {
+        flex-flow: column-reverse wrap;
+        margin: 2% 0 0 0;
+    }
+
+    .navbar a {
+        font-size: 0.8rem;
+        margin: 1rem;
+    }
+
+     .slider {
+
+    }
+
+    .main {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+        margin: 3%;
+    }
+
+    button {
+        font-size: 1rem;
+        background-color: dodgerblue;
+        border-radius: 25px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top h2 {
+        margin: 2% 0;
+        font-size: 1.5rem;
+
+    }
+
+    .bottom {
+        flex-direction: column;
+        text-align: center;
+        margin: 1%;
+
+    }
+    
+    .bottom h2 {
+        margin: 2% 0 5% 0;
+        font-size: 1.5rem;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    footer {
+        margin: 2% 0;
+    }
+}
+
+
+@media (max-width: 800px) {
+    button {
+        font-size: 1.2rem;
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    footer {
+        margin: 2% 0;
+    }
+}
